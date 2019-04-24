@@ -1,0 +1,30 @@
+{
+	"name": "visualize-airport-util-wifi-scan",
+	"description": "Visualize an iOS AirPort Utility WiFi scan.",
+	"version": "1.0.0",
+	"main": "index.js",
+	"files": [
+		"index.js",
+		"cli.js",
+		"example.txt"
+	],
+	"keywords": [
+		"airport",
+		"utility",
+		"wifi",
+		"wlan",
+		"bssid",
+		"command line"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/visualize-airport-util-wifi-scan",
+	"repository": "derhuerst/visualize-airport-util-wifi-scan",
+	"bugs": "https://github.com/derhuerst/visualize-airport-util-wifi-scan/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=10"
+	},
+	"dependencies": {
+		"mri": "^1.1.4"
+	}
+}
