@@ -3,7 +3,6 @@
 
 const mri = require('mri')
 
-const encode = require('.')
 const pkg = require('./package.json')
 
 const argv = mri(process.argv.slice(2), {
@@ -27,9 +26,7 @@ if (argv.version || argv.v) {
 }
 
 const showError = (err) => {
-	if (process.env.NODE_DEBUG === 'visualize-airport-util-wifi-scan') {
-		console.error(err)
-	} else process.stderr.write(err + '\n')
+	console.error(err)
 	process.exit(1)
 }
 
@@ -37,6 +34,10 @@ const {isatty} = require('tty')
 if (isatty(process.stdin.fd)) showError('Put the scan via stdin.')
 
 const parse = require('.')
+const render = require('./render')
 
 parse(process.stdin)
+.then((ranges) => {
+	process.stdout.write(render(ranges))
+})
 .catch(showError)
