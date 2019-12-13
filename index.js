@@ -50,6 +50,7 @@ const parse = (input, opt = {}) => {
 		const {id, name, bssid, rssi, channel, t} = row
 		const measurement = [t, rssi, channel]
 
+		// todo: exports are not sorted by time!
 		if (currentStreak[id] && (t - currentStreak[id].lastSeen) > THRESHOLD) {
 			// seen too long ago -> flush old streak
 			streaks.push(currentStreak[id])
