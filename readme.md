@@ -1,6 +1,6 @@
 # visualize-airport-util-wifi-scan
 
-**Visualize an [iOS AirPort Utility](https://itunes.apple.com/us/app/airport-utility/id427276530) WiFi scan.**
+**Parse & visualize an [iOS AirPort Utility](https://itunes.apple.com/us/app/airport-utility/id427276530) WiFi scan.**
 
 [![npm version](https://img.shields.io/npm/v/visualize-airport-util-wifi-scan.svg)](https://www.npmjs.com/package/visualize-airport-util-wifi-scan)
 [![build status](https://api.travis-ci.org/derhuerst/visualize-airport-util-wifi-scan.svg?branch=master)](https://travis-ci.org/derhuerst/visualize-airport-util-wifi-scan)
@@ -25,8 +25,10 @@ npx visualize-airport-util-wifi-scan <scan.txt
 ## Usage
 
 ```
-visualize-airport-util-wifi-scan <scan.txt
+parse-airport-util-wifi-scan <scan.txt
 ```
+
+⚠️ The output will *not* be sorted by time, but in the same order as the input!
 
 
 ## Contributing

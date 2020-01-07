@@ -1,15 +1,14 @@
 {
 	"name": "visualize-airport-util-wifi-scan",
-	"description": "Visualize an iOS AirPort Utility WiFi scan.",
+	"description": "Parse & visualize an iOS AirPort Utility WiFi scan.",
 	"version": "1.0.1",
 	"main": "index.js",
 	"bin": {
-		"visualize-airport-util-wifi-scan": "./cli.js"
+		"parse-airport-util-wifi-scan": "./parse.js"
 	},
 	"files": [
-		"index.js",
-		"cli.js",
-		"render.js",
+		"parse.js",
+		"lib",
 		"example.txt"
 	],
 	"keywords": [
@@ -17,8 +16,8 @@
 		"utility",
 		"wifi",
 		"wlan",
-		"bssid",
-		"command line"
+		"parse",
+		"visualize"
 	],
 	"author": "Jannis R <mail@jannisr.de>",
 	"homepage": "https://github.com/derhuerst/visualize-airport-util-wifi-scan",
@@ -29,13 +28,9 @@
 		"node": ">=10"
 	},
 	"dependencies": {
-		"chalk": "^2.4.2",
 		"csv-parser": "^2.2.0",
-		"flatten-overlapping-ranges": "^1.0.0",
-		"hashcolor": "0.0.3",
-		"lodash": "^4.17.15",
 		"mri": "^1.1.4",
-		"overlapping-ranges-layout": "^1.0.1",
+		"ndjson": "^1.5.0",
 		"pump": "^3.0.0"
 	}
 }
