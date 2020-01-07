@@ -4,6 +4,7 @@ node_js:
   - 'lts/*'
   - '10'
 script:
+  - npm test
   - cat example.txt | ./parse.js | >/dev/null
 cache: npm
 notifications:
