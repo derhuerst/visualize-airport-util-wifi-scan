@@ -5,7 +5,7 @@ node_js:
   - '10'
 script:
   - npm test
-  - cat example.txt | ./parse.js | >/dev/null
+  - cat example.txt | ./parse.js | ./visualize.js >/dev/null
 cache: npm
 notifications:
   email:

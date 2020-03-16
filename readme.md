@@ -25,10 +25,8 @@ npx visualize-airport-util-wifi-scan <scan.txt
 ## Usage
 
 ```
-parse-airport-util-wifi-scan <scan.txt
+cat scan.txt | parse-airport-util-wifi-scan | visualize-airport-util-wifi-scan
 ```
-
-⚠️ The output will *not* be sorted by time, but in the same order as the input!
 
 
 ## Contributing

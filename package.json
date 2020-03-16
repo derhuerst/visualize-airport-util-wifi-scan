@@ -4,10 +4,12 @@
 	"version": "1.0.1",
 	"main": "index.js",
 	"bin": {
-		"parse-airport-util-wifi-scan": "./parse.js"
+		"parse-airport-util-wifi-scan": "./parse.js",
+		"visualize-airport-util-wifi-scan": "./visualize.js"
 	},
 	"files": [
 		"parse.js",
+		"visualize.js",
 		"lib",
 		"example.txt"
 	],
