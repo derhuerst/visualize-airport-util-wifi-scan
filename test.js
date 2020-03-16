@@ -3,7 +3,7 @@
 const {join} = require('path')
 const {createReadStream} = require('fs')
 const {array: collectStream} = require('get-stream')
-const {deepStrictEqual} = require('assert')
+const {deepStrictEqual, ok} = require('assert')
 const createParser = require('./lib/parser')
 
 const src = join(__dirname, 'example.txt')
@@ -28,6 +28,7 @@ collectStream(parser)
 		channel: 11,
 		t: 66952
 	})
+	ok(output.find(r => r.name === 'qwerz' && r.rssi === null))
 	deepStrictEqual(output[output.length - 1], {
 		name: "BVG Wi-Fi",
 		bssid: "00:81:C4:E6:69:10",

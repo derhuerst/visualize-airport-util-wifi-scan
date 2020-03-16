@@ -28,6 +28,15 @@ npx visualize-airport-util-wifi-scan <scan.txt
 cat scan.txt | parse-airport-util-wifi-scan | visualize-airport-util-wifi-scan
 ```
 
+You can filter a parsed scan using e.g. [`ndjson-cli`](https://github.com/mbostock/ndjson-cli):
+
+```shell
+cat scan.txt | parse-airport-util-wifi-scan \
+	| ndjson-filter 'd.rssi >= -70' \ # filter weak signals
+	| ndjson-filter 'd.name === "foo bar"' \ # filter by ESSID/name
+	| visualize-airport-util-wifi-scan >scan.html
+```
+
 
 ## Contributing
 
