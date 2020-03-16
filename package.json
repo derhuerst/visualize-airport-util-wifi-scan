@@ -1,7 +1,7 @@
 {
 	"name": "visualize-airport-util-wifi-scan",
 	"description": "Parse & visualize an iOS AirPort Utility WiFi scan.",
-	"version": "2.1.0",
+	"version": "2.2.0",
 	"main": "index.js",
 	"bin": {
 		"parse-airport-util-wifi-scan": "./parse.js",
