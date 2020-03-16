@@ -1,8 +1,11 @@
 {
 	"name": "visualize-airport-util-wifi-scan",
 	"description": "Visualize an iOS AirPort Utility WiFi scan.",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"main": "index.js",
+	"bin": {
+		"visualize-airport-util-wifi-scan": "./cli.js"
+	},
 	"files": [
 		"index.js",
 		"cli.js",
