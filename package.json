@@ -30,10 +30,10 @@
 		"node": ">=12"
 	},
 	"dependencies": {
-		"csv-parser": "^2.2.0",
+		"csv-parser": "^3.0.0",
 		"hashcolor": "0.0.3",
 		"mri": "^1.1.4",
-		"ndjson": "^1.5.0",
+		"ndjson": "^2.0.0",
 		"pump": "^3.0.0"
 	},
 	"devDependencies": {
