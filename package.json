@@ -37,10 +37,12 @@
 		"pump": "^3.0.0"
 	},
 	"devDependencies": {
+		"eslint": "^7.32.0",
 		"get-stream": "^5.1.0"
 	},
 	"scripts": {
+		"lint": "eslint .",
 		"test": "node test.js",
-		"prepublishOnly": "npm test"
+		"prepublishOnly": "npm run lint && npm test"
 	}
 }
